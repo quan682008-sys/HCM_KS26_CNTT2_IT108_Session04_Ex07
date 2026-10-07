@@ -1,0 +1,8 @@
+Phần 1: Phân tích vấn đề
+Lệnh cd Menu Thang 9 bị lỗi vì tên thư mục có khoảng trắng. PowerShell hiểu Menu, Thang và 9 là các phần khác nhau nên không xác định đúng tên thư mục.
+Phần 2: Cách sửa
+Cách 1: Dùng dấu ngoặc kép:
+cd "Menu Thang 9"
+Cách 2: Dùng dấu nháy đơn:
+cd 'Menu Thang 9'
+Cả hai cách đều giúp PowerShell hiểu Menu Thang 9 là một tên thư mục duy nhất.
